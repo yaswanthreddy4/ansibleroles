@@ -1,0 +1,16 @@
+---
+# tasks file for multipkgs
+- name: install httpd
+  yum: name={{pkg1}} state=installed
+
+- name: install curl
+  yum: name={{pkg2}} state=installed
+
+- name: install finger
+  yum: name={{pkg3}} state=installed
+
+- name: copy index.html
+  copy: src=index.html dest=/var/www/html/index.html
+ 
+- name: start httpd
+  service: name=httpd state=restarted

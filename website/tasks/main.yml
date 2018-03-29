@@ -1,0 +1,4 @@
+---
+# tasks file for website
+- name: download data from website
+  get_url: url=https://pkg.jenkins.io/redhat-stable/ dest=/home/yaswanth/jenkinsdata

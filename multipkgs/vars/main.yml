@@ -1,0 +1,10 @@
+---
+# vars file for multipkgs
+vars:
+  pkg1: httpd
+vars_file:
+- abc.yml
+vars_prompt:
+- prompt: enter thename
+  name: pkg3
+  private: no
